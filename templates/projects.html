@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section" id="projects">
+  <h2 class="section-title">My Projects</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+    <div class="project-card">
+      <div class="project-image">
+        <img src="{{ url_for('static',filename='images/E-Commerce.jpeg')}}" alt="Project 1">
+      </div>
+      <div class="project-info">
+        <h3>E-commerce Website</h3>
+        <p>A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Flask</span>
+        </div>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="{{ url_for('static',filename='images/portfolio-template.jpeg')}}" alt="Project 2">
+      </div>
+      <div class="project-info">
+        <h3>Portfolio Template</h3>
+        <p>A customizable portfolio template for creative professionals to showcase their work and skills.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+        </div>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+    
+ 
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="{{ url_for('static',filename='images/AWS ros.jpg')}}" alt="Project 3">
+      </div>
+      <div class="project-info">
+        <h3>AWS ROS</h3>
+        <p>Testing and updating ROS applications at scale</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">ROS noetic</span>
+          <span class="project-tag">AWS</span>
+        </div>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+    
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="https://picsum.photos/seed/project6/600/400.jpg" alt="Project 4">
+      </div>
+      <div class="project-info">
+        <h3>Fitness Tracker</h3>
+        <p>An application for tracking workouts, setting fitness goals, and monitoring progress over time.</p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">React</span>
+        </div>
+        <a href="#" class="project-link">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
